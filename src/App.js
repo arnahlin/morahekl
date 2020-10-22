@@ -8,6 +8,7 @@ import Footer from "./components/Footer";
 import Home from "./components/Home";
 import About from "./components/About";
 import Contact from "./components/Contact";
+import Order from "./components/Contact";
 
 import Bears from "./components/ProductPages/Bears";
 import Bunnies from "./components/ProductPages/Bunnies";
@@ -15,18 +16,23 @@ import Keychains from "./components/ProductPages/Keychains";
 
 function App() {
   return (
-    <div className="App">
+    <div className="app-container">
       <Router>
-        <Header />
-        <Route exact path="/" component={Home} />
-        <Route exact path="/Um" component={About} />
-        <Route exact path="/Hafasamband" component={Contact} />
+        <div className="app-header">
+          <Header />
+        </div>
+        <div className="app-routes">
+          <Route exact path="/" component={Home} />
+          <Route exact path="/Um" component={About} />
+          <Route exact path="/Hafasamband" component={Contact} />
 
-        <Route exact path="/Bangsar" component={Bears} />
-        <Route exact path="/Kanínur" component={Bunnies} />
-        <Route exact path="/Lyklakippur" component={Keychains} />
-
-        <Footer />
+          <Route exact path="/Bangsar" component={Bears} />
+          <Route exact path="/Kanínur" component={Bunnies} />
+          <Route exact path="/Lyklakippur" component={Keychains} />
+        </div>
+        <div className="app-footer">
+          <Footer />
+        </div>
       </Router>
     </div>
   );

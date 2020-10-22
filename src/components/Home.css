@@ -1,0 +1,48 @@
+nav {
+  display: flex;
+  align-items: center;
+  height: 100%;
+
+  border: 1px;
+  border-style: solid;
+  border-color: black;
+}
+
+.home-nav {
+  height: 100%;
+  width: 100%;
+
+  /* border: 5px;
+  border-style: solid;
+  border-color: black; */
+
+  position: relative;
+  text-align: center;
+  color: red;
+
+  border: 4px;
+  border-style: solid;
+  border-color: red;
+}
+
+.pic-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.home-pic {
+  border-radius: 50%; /* Gerir myndina kringlótta */
+  height: 300px;
+  width: 300px;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  /* border: 5px;
+  border-style: solid;
+  border-color: red; */
+}

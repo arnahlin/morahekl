@@ -1,0 +1,42 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  padding-top: 150px;
+}
+
+.app-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  /* border: 5px;
+  border-style: solid;
+  border-color: red; */
+}
+
+.app-header {
+  top: 0;
+  /*
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 130px;
+*/
+}
+
+.app-routes {
+  flex-grow: 1;
+  border-style: solid;
+  border-color: red;
+  border: 5px;
+}
+
+.app-footer {
+  display: flex;
+  height: 80px;
+  justify-content: space-between;
+  align-items: center;
+}

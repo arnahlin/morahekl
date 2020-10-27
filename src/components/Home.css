@@ -3,9 +3,9 @@ nav {
   align-items: center;
   height: 100%;
 
-  border: 1px;
+  /* border: 1px;
   border-style: solid;
-  border-color: black;
+  border-color: black; */
 }
 
 .home-nav {
@@ -19,20 +19,22 @@ nav {
   position: relative;
   text-align: center;
   color: red;
-
-  border: 4px;
+  /* 
+  border: 2px;
   border-style: solid;
-  border-color: red;
+  border-color: red; */
 }
 
 .pic-text {
   position: absolute;
-  top: 50%;
+  top: 80%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 
-.home-pic {
+.home-pic-1,
+.home-pic-2,
+.home-pic-3 {
   border-radius: 50%; /* Gerir myndina kringlótta */
   height: 300px;
   width: 300px;
@@ -41,8 +43,40 @@ nav {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
 
-  /* border: 5px;
-  border-style: solid;
-  border-color: red; */
+.home-pic-1:hover {
+  opacity: 0.6;
+}
+
+.home-pic-2:hover {
+  opacity: 0.6;
+}
+
+.home-pic-3:hover {
+  opacity: 0.6;
+}
+
+.pic-text-1,
+.pic-text-2,
+.pic-text-3 {
+  background-color: #797979;
+  color: white;
+  font-size: 16px;
+  /* font-weight: bold; */
+  padding: 16px 32px;
+}
+
+.text-container {
+  transition: 0.5s ease;
+  opacity: 1;
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.text-container:hover {
+  opacity: 1;
 }

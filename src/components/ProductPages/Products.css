@@ -7,16 +7,17 @@
   column-gap: 30px;
   row-gap: 50px;
 
-  border: 2px;
+  /* border: 2px;
   border-style: solid;
-  border-color: black;
+  border-color: black; */
 }
 
 .grid-item {
+  justify-self: center;
+
   border: 2px;
   border-style: solid;
   border-color: black;
-  justify-self: center;
 }
 
 .bear-pic {

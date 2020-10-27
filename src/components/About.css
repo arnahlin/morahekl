@@ -1,0 +1,14 @@
+.about-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.heading {
+  padding-top: 60px;
+}
+
+.content {
+  padding-top: 60px;
+}

@@ -1,6 +1,8 @@
 import React from "react";
 import emailjs from "emailjs-com";
-import { Link } from "react-router-dom";
+import About from "./About";
+import "./Contact.css";
+// import { Link } from "react-router-dom";
 
 function Contact() {
 
@@ -19,7 +21,7 @@ function Contact() {
 
   return (
     <div>
-      <div className="container">
+      <div className="contact-container">
         <form onSubmit={sendEmail}>
           <h1>Hafa samband</h1>
           <p>Nafn:</p>

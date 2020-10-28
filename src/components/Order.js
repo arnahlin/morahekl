@@ -1,9 +1,11 @@
 import React from "react";
 import emailjs from "emailjs-com";
 import "./Order.css";
+// import { BrowserRouter as Router, Route } from "react-router-dom";
 //import { Link } from "react-router-dom";
 
-function Order() {
+
+function Order(props) {
 
     function sendEmail(e) {
         console.log("enters function")
@@ -19,29 +21,45 @@ function Order() {
         e.target.reset();
     }
 
-    return (
-        // TODO tengja þetta form við "panta" takka sem skilar inn uppl.
-        //      um hverskonar vöru var verið að panta.
-        <div className="order-container">
-            <div className="order-pic">
-                <img className="bear-pic" src="bangsi.JPG"></img>
+    console.log(props.location.productInfo);
+
+    // Athugar hvort gögn séu til staðar, birtir skilaboð til notanda ef svo er ekki 
+    // Gert til að koma í veg fyrir hrun ef notandi slær beint inn "morahekl.is/Panta"
+    if (props.location.productInfo) {
+        var product = props.location.productInfo;
+
+
+        return (
+            // TODO tengja þetta form við "panta" takka sem skilar inn uppl.
+            //      um hverskonar vöru var verið að panta.
+            <div className="order-container">
+                <div className="pic-container"> {/** order-pic */}
+                    <img className="order-pic" alt="" src={product.img}></img>
+                </div>
+                <div className="order-form">
+                    <form onSubmit={sendEmail}>
+                        <h1>Panta</h1>
+                        <p>Nafn:</p>
+                        <input type="text" className="contact-form" placeholder="Nafn" name="name" />
+                        <p>Netfang:</p>
+                        <input type="email" className="contact-form" placeholder="Netfang" name="email" />
+                        <p>Sími:</p>
+                        <input type="text" className="contact-form" placeholder="Sími" name="subject" />
+                        <p>Skilaboð:</p>
+                        <input type="text" className="contact-form" placeholder="Skilaboð" name="message" />
+                        <input type='submit' className="form-button" value="Senda" />
+                    </form>
+                </div>
             </div>
-            <div className="order-form">
-                <form onSubmit={sendEmail}>
-                    <h1>Panta</h1>
-                    <p>Nafn:</p>
-                    <input type="text" className="contact-form" placeholder="Nafn" name="name" />
-                    <p>Netfang:</p>
-                    <input type="email" className="contact-form" placeholder="Netfang" name="email" />
-                    <p>Sími:</p>
-                    <input type="text" className="contact-form" placeholder="Sími" name="subject" />
-                    <p>Skilaboð:</p>
-                    <input type="text" className="contact-form" placeholder="Skilaboð" name="message" />
-                    <input type='submit' className="form-button" value="Senda" />
-                </form>
+        );
+    } else {
+        return (
+            <div>
+                <p>Vinsamlegast opnið forsíðu</p>
             </div>
-        </div>
-    );
+        );
+    }
+
 }
 
 export default Order;

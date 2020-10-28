@@ -1,6 +1,6 @@
 import React from "react";
 import emailjs from "emailjs-com";
-import About from "./About";
+// import About from "./About";
 import "./Contact.css";
 // import { Link } from "react-router-dom";
 

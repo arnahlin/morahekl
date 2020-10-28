@@ -3,23 +3,35 @@ import "./Info.css";
 import { Link } from "react-router-dom";
 
 
-function Info() {
+function Info(props) {
+    // console.log(props.location.productInfo);
+    // console.log(props.location.productInfo.np0´ðame);
+
+    // var product = props.location.productInfo;
+    // console.log(product);
+
+    if (props.location.productInfo) {
+        console.log("yay");
+        var product = props.location.productInfo;
+    } else {
+        console.log("nayy");
+        var product = { id: null, name: "Vinsamlegast opnið forsíðu", price: null, img: null, inventory: null };
+    }
+
     return (
         <div className="info-container">
-            {/* <h1>Upplýsingar</h1> */}
-            <div className="info-pic">
-                <img className="bear-pic" src="bangsi.JPG"></img>
+            <div className="pic-container"> {/* TODO: samræma nöfn á div utan um myndir? */}
+                <img className="info-pic" alt="" src={product.img}></img>
             </div>
             <div className="info-content">
                 <div className="info-text">
-
-                    <h2>Nafn vöru</h2>
-                    <p>Hér kemur texti um vöruna</p>
-                    <p>Litur vöru</p>
-                    <p>Almennar upplýsingar: efni, stærð, osfrv</p>
-                    <p>Verð</p>
+                    <h2>{product.name}</h2>
+                    {/*TODO: almennar upplýsingar */}
+                    <p>Almennar upplýsingar: efni, stærð, osfrv (harðkóðað atm)</p>
+                    <p>Lagerstaða: {product.inventory}</p>
+                    <p>Verð: {product.price}</p>
                 </div>
-                <Link to="/Panta" className="to-info">
+                <Link to={{ pathname: "/Panta", productInfo: product }} className="to-info">
                     <button>Panta</button>
                 </Link>
             </div>

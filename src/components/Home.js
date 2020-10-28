@@ -6,7 +6,7 @@ function Home() {
   return (
     <nav>
       <div className="home-nav">
-        <Link to="/Bangsar" className="home-bear">
+        <Link to="/Bangsar" className="home-link">
           <img className="home-pic-1" alt="" src="bangsi.JPG"></img>
           <div className="text-container">
             <div className="pic-text-1">Bangsar</div>
@@ -14,7 +14,7 @@ function Home() {
         </Link>
       </div>
       <div className="home-nav">
-        <Link to="/Kanínur" className="home-bun">
+        <Link to="/Kanínur" className="home-link">
           <img className="home-pic-2" alt="" src="bangsi.JPG"></img>
           <div className="text-container">
             <div className="pic-text-2">Kanínur</div>
@@ -22,7 +22,7 @@ function Home() {
         </Link>
       </div>
       <div className="home-nav">
-        <Link to="/Lyklakippur" className="home-key">
+        <Link to="/Lyklakippur" className="home-link">
           <img className="home-pic-3" alt="" src="bangsi.JPG"></img>
           <div className="text-container">
             <div className="pic-text-3">Lyklakippur</div>

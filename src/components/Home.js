@@ -15,7 +15,7 @@ function Home() {
       </div>
       <div className="home-nav">
         <Link to="/Kanínur" className="home-link">
-          <img className="home-pic-2" alt="" src="bangsi.JPG"></img>
+          <img className="home-pic-2" alt="" src="bunny.JPG"></img>
           <div className="text-container">
             <div className="pic-text-2">Kanínur</div>
           </div>
@@ -23,7 +23,7 @@ function Home() {
       </div>
       <div className="home-nav">
         <Link to="/Lyklakippur" className="home-link">
-          <img className="home-pic-3" alt="" src="bangsi.JPG"></img>
+          <img className="home-pic-3" alt="" src="whale.JPG"></img>
           <div className="text-container">
             <div className="pic-text-3">Lyklakippur</div>
           </div>

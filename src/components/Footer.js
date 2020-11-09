@@ -5,12 +5,16 @@ import { Link } from "react-router-dom";
 function Footer() {
   return (
     <footer>
-      <Link to="/Um" className="footer-about">
-        Um Móru hekl
+      <div className="footer-item">
+        <Link to="/Hafasamband" className="footer-contact">
+          Hafa Samband
       </Link>
-      <Link to="/Hafasamband" className="footer-contact">
-        Hafa Samband
+      </div>
+      <div className="footer-item">
+        <Link to="/Um" className="footer-about">
+          Um Móru hekl
       </Link>
+      </div>
     </footer>
   );
 }

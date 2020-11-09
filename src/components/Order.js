@@ -28,7 +28,6 @@ function Order(props) {
     if (props.location.productInfo) {
         var product = props.location.productInfo;
 
-
         return (
             // TODO tengja þetta form við "panta" takka sem skilar inn uppl.
             //      um hverskonar vöru var verið að panta.
@@ -47,7 +46,7 @@ function Order(props) {
                         <input type="text" className="contact-form" placeholder="Sími" name="subject" />
                         <p>Skilaboð:</p>
                         <input type="text" className="contact-form" placeholder="Skilaboð" name="message" />
-                        <input type='submit' className="form-button" value="Senda" />
+                        <input type='submit' className="form-button" value="Staðfesta" />
                     </form>
                 </div>
             </div>

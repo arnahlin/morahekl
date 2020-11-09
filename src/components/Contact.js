@@ -1,8 +1,6 @@
 import React from "react";
 import emailjs from "emailjs-com";
-// import About from "./About";
 import "./Contact.css";
-// import { Link } from "react-router-dom";
 
 function Contact() {
 
@@ -22,16 +20,16 @@ function Contact() {
   return (
     <div>
       <div className="contact-container">
+        <h1 className="form-heading">Hafa samband</h1>
         <form onSubmit={sendEmail}>
-          <h1>Hafa samband</h1>
-          <p>Nafn:</p>
-          <input type="text" className="contact-form" placeholder="Nafn" name="name" />
-          <p>Netfang:</p>
-          <input type="email" className="contact-form" placeholder="Netfang" name="email" />
-          <p>Fyrirsögn:</p>
+          {/* <p>Nafn:</p> */}
+          <input type="text" className="contact-form" placeholder="Nafn" name="name" required />
+          {/* <p>Netfang:</p> */}
+          <input type="email" className="contact-form" placeholder="Netfang" name="email" required />
+          {/* <p>Fyrirsögn:</p> */}
           <input type="text" className="contact-form" placeholder="Fyrirsögn" name="subject" />
-          <p>Skilaboð:</p>
-          <input type="text" className="contact-form" placeholder="Skilaboð" name="message" />
+          {/* <p>Skilaboð:</p> */}
+          <input type="text" className="contact-text" placeholder="Skilaboð" name="message" required />
           <input type='submit' className="form-button" value="Senda" />
         </form>
       </div>

@@ -18,9 +18,11 @@ class Bears extends Component {
         {bears.map((bear) => (
           <div className="grid-item" key={bear.id}>
             <Link to={{ pathname: "/Upplysingar", productInfo: bear }} className="to-info">
-              <img className="bears-pic" alt="" src={bear.img}></img>
-              <div>{bear.name}</div>
-              <div>{bear.price}</div>
+              <img className="product-pic" alt="" src={bear.img}></img>
+              <div className="product-about">
+                <div>{bear.name}</div>
+                <div className="product-price">{bear.price}</div>
+              </div>
             </Link>
           </div>
 

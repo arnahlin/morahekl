@@ -3,6 +3,8 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  font-family: "Spartan", sans-serif;
+  color: #4d4d4d;
 }
 
 .heading {
@@ -11,4 +13,10 @@
 
 .content {
   padding-top: 60px;
+}
+
+.about-text {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
 }

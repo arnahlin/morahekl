@@ -22,13 +22,13 @@ function Contact() {
       <div className="contact-container">
         <h1 className="form-heading">Hafa samband</h1>
         <form onSubmit={sendEmail}>
-          {/* <p>Nafn:</p> */}
+          <p>Nafn:</p>
           <input type="text" className="contact-form" placeholder="Nafn" name="name" required />
-          {/* <p>Netfang:</p> */}
+          <p>Netfang:</p>
           <input type="email" className="contact-form" placeholder="Netfang" name="email" required />
-          {/* <p>Fyrirsögn:</p> */}
+          <p>Fyrirsögn:</p>
           <input type="text" className="contact-form" placeholder="Fyrirsögn" name="subject" />
-          {/* <p>Skilaboð:</p> */}
+          <p>Skilaboð:</p>
           <input type="text" className="contact-text" placeholder="Skilaboð" name="message" required />
           <input type='submit' className="form-button" value="Senda" />
         </form>

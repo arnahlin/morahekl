@@ -7,6 +7,7 @@
 
 body {
   /* height: 100vh; */
+  /* margin: 0px 20px 0px 20px; top right bottom left */
 }
 
 .app-container {
@@ -24,6 +25,7 @@ body {
   top: 0px;
   position: fixed;
   z-index: 1;
+
   /*
   display: flex;
   justify-content: center;

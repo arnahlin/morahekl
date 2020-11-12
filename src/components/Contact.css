@@ -24,7 +24,8 @@ form {
   resize: none;
   /* box-shadow: none; */
   padding: 10px;
-  margin: 10px;
+  /* margin: 10px; */
+  margin: 5px 10px 10px 10px; /* top right bottom left */
   border: 1px;
   border-style: solid;
   border-color: #4d4d4d;
@@ -59,4 +60,10 @@ form {
 
 .form-button:hover {
   background-color: #4d4d4d; /* 737373 */
+}
+
+.contact-container p {
+  align-self: flex-start;
+  padding-left: 10px;
+  font-size: 15px;
 }

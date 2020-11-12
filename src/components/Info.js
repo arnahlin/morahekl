@@ -2,7 +2,7 @@ import React from "react";
 import "./Info.css";
 import emailjs from "emailjs-com";
 
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
 
 function Info(props) {
@@ -23,11 +23,12 @@ function Info(props) {
 
     // console.log(props.location.productInfo);
     // console.log(props.location.productInfo.name);
-
     // var product = props.location.productInfo;
     // console.log(product);
 
+
     // TODO: skoða þetta betur 
+
     if (props.location.productInfo) {
         console.log("yay");
         var product = props.location.productInfo;
@@ -59,13 +60,13 @@ function Info(props) {
             <div className="info-form">
                 <h1 className="form-heading">Panta</h1>
                 <form > {/* onSubmit={sendEmail} */}
-                    {/* <p>Nafn:</p> */}
+                    <p>Nafn:</p>
                     <input type="text" className="order-form" placeholder="Nafn" name="name" required />
-                    {/* <p>Netfang:</p> */}
+                    <p>Netfang:</p>
                     <input type="email" className="order-form" placeholder="Netfang" name="email" required />
-                    {/* <p>Sími:</p> */}
+                    <p>Sími:</p>
                     <input type="text" className="order-form" placeholder="Sími" name="subject" required />
-                    {/* <p>Skilaboð:</p> */}
+                    <p>Skilaboð:</p>
                     <input type="text" className="order-form" placeholder="Skilaboð" name="message" required />
                     <input type='submit' className="form-button" value="Staðfesta" />
                 </form>

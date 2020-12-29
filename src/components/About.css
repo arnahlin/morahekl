@@ -1,22 +1,53 @@
+.foo {
+  height: 100%;
+}
+
 .about-container {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
   font-family: "Spartan", sans-serif;
   color: #4d4d4d;
+  height: 100%;
 }
 
-.heading {
+/* .heading {
   padding-top: 60px;
-}
+} */
 
 .content {
-  padding-top: 60px;
+  /* padding-top: 60px; */
+  padding: 60px 0px 80px 0px; /* top right bottom left */
 }
 
 .about-text {
   padding: 20px;
   display: flex;
   justify-content: center;
+}
+
+/* Mobile */
+@media only screen and (max-width: 414px) {
+  .about-text {
+    text-align: center;
+  }
+}
+
+/* Tablets */
+@media only screen and (min-width: 415px) and (max-width: 768px) {
+  .about-text {
+    text-align: center;
+  }
+}
+
+/* Desktop */
+@media only screen and (min-width: 1900px) {
+  .heading {
+    padding-top: 100px;
+  }
+
+  .content {
+    font-size: 20px;
+  }
 }

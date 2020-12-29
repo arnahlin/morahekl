@@ -18,7 +18,7 @@ function Contact() {
   }
 
   return (
-    <div>
+    <div className="foo">
       <div className="contact-container">
         <h1 className="form-heading">Hafa samband</h1>
         <form onSubmit={sendEmail}>

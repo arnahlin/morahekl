@@ -54,6 +54,14 @@ const bears = [
         "img": "/images/b_brown.JPG",
         "size": "26-29 cm",
         "inventory": 0
+    },
+    {
+        "id": 8,
+        "name": "Dökkgrár",
+        "price": "7.000 kr.",
+        "img": "/images/b_darkgrey.JPG",
+        "size": "26-29 cm",
+        "inventory": 1
     }
 ]
 

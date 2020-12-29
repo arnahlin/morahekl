@@ -2,7 +2,7 @@
   display: flex;
   height: 100%;
   font-family: "Spartan", sans-serif;
-  padding: 0px 50px 0px 50px; /* top right bottom left */
+  padding: 10px 50px 0px 50px; /* top right bottom left */
 
   /* border: 3px;
   border-style: solid;
@@ -12,7 +12,6 @@
 .pic-container {
   height: 300px;
   width: 300px;
-  /* padding-right: 100px; */
 
   /* border: 3px;
   border-style: solid;
@@ -35,9 +34,9 @@
   justify-content: center;
   align-items: center;
 
-  /* border: 3px;
+  /* border: 2px;
   border-style: solid;
-  border-color: red; */
+  border-color: black; */
 }
 
 .product-name {
@@ -52,11 +51,12 @@
   padding: 5px 0px 5px 0px;
 }
 
-.price {
+.info-text p.price {
   padding-top: 50px;
 }
 
-.order-form {
+.order-form,
+.order-form-msg {
   padding: 8px;
   margin: 5px;
   border: 1px;
@@ -66,6 +66,9 @@
   width: 300px;
   resize: none;
 }
+.order-form-msg {
+  height: 50px;
+}
 
 .form-button {
   margin-top: 10px;
@@ -74,6 +77,96 @@
 
 .info-form p {
   align-self: flex-start;
-  padding-left: 10px;
+  padding: 5px 0px 0px 10px; /* top right bottom left */
   font-size: 15px;
+}
+
+/* Mobile */
+@media only screen and (max-width: 414px) {
+  .info-container {
+    flex-wrap: wrap;
+    /* margin-bottom: 100px; */
+  }
+
+  .info-image,
+  .info-content {
+    /* height: 50%; */
+    height: auto;
+    padding: 10px 0px 20px 0px;
+  }
+
+  .info-form {
+    padding-top: 10px;
+    height: 450px;
+    justify-content: flex-start;
+  }
+  .product-name {
+    padding: 0px; /* top right bottom left */
+  }
+
+  .info-text p.price {
+    padding-top: 10px;
+  }
+  .pic-container {
+    height: 210px;
+    width: 210px;
+  }
+
+  .info-text {
+    margin-bottom: 0px;
+  }
+}
+
+/* Tablets */
+@media only screen and (min-width: 415px) and (max-width: 768px) {
+  .info-container {
+    flex-wrap: wrap;
+    padding-top: 15px;
+  }
+  .pic-container {
+    height: 250px;
+    width: 250px;
+  }
+
+  .info-image,
+  .info-content {
+    height: 40%;
+    width: 50%;
+  }
+
+  .info-form {
+    height: 50%;
+    width: 100%;
+  }
+}
+
+/* Desktop */
+@media only screen and (min-width: 1900px) {
+  .info-container {
+    padding: 0px 80px 0px 80px; /* top right bottom left */
+  }
+
+  .pic-container {
+    height: 430px;
+    width: 430px;
+  }
+  .order-form,
+  .order-form-msg {
+    width: 500px;
+    font-size: 18px;
+  }
+  .order-form-msg {
+    height: 100px;
+  }
+  .info-form p {
+    padding: 15px 0px 0px 10px; /* top right bottom left */
+    font-size: 20px;
+  }
+  .form-button {
+    width: 120px;
+    font-size: 16px;
+  }
+  .info-content p {
+    font-size: 20px;
+  }
 }

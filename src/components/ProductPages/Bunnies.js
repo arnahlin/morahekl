@@ -21,7 +21,7 @@ class Bunnies extends Component {
               <img className="product-pic" alt="" src={bunny.img}></img>
               <div className="product-about">
                 <div>{bunny.name}</div>
-                <div>{bunny.price}</div>
+                {/* <div>{bunny.price}</div> */}
               </div>
             </Link>
           </div>

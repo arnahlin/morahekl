@@ -1,7 +1,6 @@
 import React from "react";
 import "./App.css";
 import { BrowserRouter as Router, Route } from "react-router-dom";
-
 // components
 import Header from "./components/Header";
 import Footer from "./components/Footer";
@@ -16,6 +15,7 @@ import Bunnies from "./components/ProductPages/Bunnies";
 import Keychains from "./components/ProductPages/Keychains";
 
 function App() {
+
   return (
     <div className="app-container">
       <Router>
@@ -27,7 +27,7 @@ function App() {
           <Route exact path="/Um" component={About} />
           <Route exact path="/Hafasamband" component={Contact} />
           <Route exact path="/Upplysingar" component={Info} />
-          <Route exact path="/Panta" component={Order} />
+          {/* <Route exact path="/Panta" component={Order} /> */}
 
           <Route exact path="/Bangsar" component={Bears} />
           <Route exact path="/Kanínur" component={Bunnies} />

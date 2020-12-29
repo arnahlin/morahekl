@@ -51,6 +51,7 @@ function Info(props) {
                     <p>Efni: 100% bómull</p>
                     <p>Stærð: {product.size}</p>
                     <p>Lagerstaða: {product.inventory}</p>
+                    {/*TODO: undirtexti með uppl. um afhendingartíma */}
                     <p className="price">Verð: {product.price}</p>
                 </div>
                 {/* <Link to={{ pathname: "/Panta", productInfo: product }} className="to-info">
@@ -67,7 +68,7 @@ function Info(props) {
                     <p>Sími:</p>
                     <input type="text" className="order-form" placeholder="Sími" name="subject" required />
                     <p>Skilaboð:</p>
-                    <input type="text" className="order-form" placeholder="Skilaboð" name="message" required />
+                    <input type="text" className="order-form-msg" placeholder="Skilaboð" name="message" required />
                     <input type='submit' className="form-button" value="Staðfesta" />
                 </form>
             </div>

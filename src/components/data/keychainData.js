@@ -1,59 +1,67 @@
 const keychains = [
     {
         "id": 1,
-        "name": "Gráblár",
+        "name": "Kóralrauður",
         "price": "1.500 kr.",
-        "img": "whale.JPG",
+        "img": "/images/h_red.JPG",
         "size": "3x5 cm",
         "inventory": 0
     },
     {
         "id": 2,
-        "name": "Klakablár",
+        "name": "Kóralbleikur",
         "price": "1.500 kr.",
-        "img": "whale.JPG",
+        "img": "/images/h_coral.JPG",
         "size": "3x5 cm",
-        "inventory": 0
+        "inventory": 6
     },
     {
         "id": 3,
-        "name": "Dökkblár",
+        "name": "Ljósbleikur",
         "price": "1.500 kr.",
-        "img": "whale.JPG",
+        "img": "/images/h_pink.JPG",
         "size": "3x5 cm",
-        "inventory": 0
+        "inventory": 4
     },
     {
         "id": 4,
         "name": "Fjólubleikur",
         "price": "1.500 kr.",
-        "img": "whale.JPG",
+        "img": "/images/h_purple.JPG",
         "size": "3x5 cm",
-        "inventory": 0
+        "inventory": 2
     },
     {
         "id": 5,
-        "name": "Kósíbleikur",
+        "name": "Steingrár",
         "price": "1.500 kr.",
-        "img": "whale.JPG",
+        "img": "/images/h_grey.JPG",
         "size": "3x5 cm",
-        "inventory": 0
+        "inventory": 4
     },
     {
         "id": 6,
-        "name": "Ferskjubleikur",
+        "name": "Svartur",
         "price": "1.500 kr.",
-        "img": "whale.JPG",
+        "img": "/images/h_black.JPG",
         "size": "3x5 cm",
-        "inventory": 0
+        "inventory": 1
     },
     {
         "id": 7,
-        "name": "Steingrár",
+        "name": "Dökkblár",
         "price": "1.500 kr.",
-        "img": "whale.JPG",
+        "img": "/images/h_blue.JPG",
         "size": "3x5 cm",
-        "inventory": 0
+        "inventory": 3
+    },
+    {
+        "id": 8,
+        "name": "Grænn",
+        "price": "1.500 kr.",
+        "img": "/images/h_green.JPG",
+        "size": "3x5 cm",
+        "inventory": 3
     }
 ]
 

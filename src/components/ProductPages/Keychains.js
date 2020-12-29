@@ -21,7 +21,7 @@ class Keychains extends Component {
               <img className="product-pic" alt="" src={keychain.img}></img>
               <div className="product-about">
                 <div>{keychain.name}</div>
-                <div>{keychain.price}</div>
+                {/* <div>{keychain.price}</div> */}
               </div>
             </Link>
           </div>

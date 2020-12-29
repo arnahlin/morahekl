@@ -21,7 +21,7 @@ class Bears extends Component {
               <img className="product-pic" alt="" src={bear.img}></img>
               <div className="product-about">
                 <div>{bear.name}</div>
-                <div className="product-price">{bear.price}</div>
+                {/* <div className="product-price">{bear.price}</div> */}
               </div>
             </Link>
           </div>

@@ -1,7 +1,6 @@
 import React from "react";
-import "./Info.css";
+import "./styles/Info.css";
 import emailjs from "emailjs-com";
-// import { Link } from "react-router-dom";
 
 
 function Info(props) {

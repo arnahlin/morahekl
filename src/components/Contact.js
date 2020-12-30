@@ -1,6 +1,6 @@
 import React from "react";
 import emailjs from "emailjs-com";
-import "./Contact.css";
+import "./styles/Contact.css";
 
 function Contact() {
 
@@ -38,4 +38,3 @@ function Contact() {
 }
 
 export default Contact;
-

@@ -1,6 +1,5 @@
 import React from "react";
-import "./About.css"
-// import { Link } from "react-router-dom";
+import "./styles/About.css"
 
 function About() {
   return (
@@ -16,8 +15,7 @@ function About() {
           <div className="about-text">
             <p>Móra hekl er á facebook: www.facebook.com/morahekl
             og á Instagram: @morahekl eða instagram.com/morahekl
-      </p>
-
+            </p>
           </div>
         </div>
       </div>

@@ -12,7 +12,6 @@ class Bunnies extends Component {
   }
   render() {
     const { bunnies } = this.state;
-    console.log(bunnies);
     return (
       <div className="grid-container">
         {bunnies.map((bunny) => (
@@ -31,39 +30,5 @@ class Bunnies extends Component {
     )
   }
 }
-
-
-// function Bunnies() {
-//   return (
-//     <div>
-//       <div className="grid-container">
-//         <div className="grid-item">
-//           <img className="bear-pic" alt="" src="bangsi.JPG"></img>
-//         </div>
-//         <div className="grid-item">
-//           <img className="bear-pic" alt="" src="bangsi.JPG"></img>
-//         </div>
-//         <div className="grid-item">
-//           <img className="bear-pic" alt="" src="bangsi.JPG"></img>
-//         </div>
-//         <div className="grid-item">
-//           <img className="bear-pic" alt="" src="bangsi.JPG"></img>
-//         </div>
-//         <div className="grid-item">
-//           <img className="bear-pic" alt="" src="bangsi.JPG"></img>
-//         </div>
-//         <div className="grid-item">
-//           <img className="bear-pic" alt="" src="bangsi.JPG"></img>
-//         </div>
-//         <div className="grid-item">
-//           <img className="bear-pic" alt="" src="bangsi.JPG"></img>
-//         </div>
-//         <div className="grid-item">
-//           <img className="bear-pic" alt="" src="bangsi.JPG"></img>
-//         </div>
-//       </div>
-//     </div>
-//   );
-// }
 
 export default Bunnies;

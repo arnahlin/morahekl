@@ -19,23 +19,19 @@ form {
   align-items: center;
 }
 .form-heading {
-  padding: 0px 0px 10px 0px; /* top right bottom left */
+  padding: 0px 0px 10px 0px;
 }
 
 .contact-form,
 .contact-text {
   resize: none;
   padding: 10px;
-  margin: 5px 10px 10px 10px; /* top right bottom left */
+  margin: 5px 10px 10px 10px;
   border: 1px;
   border-style: solid;
   border-color: #4d4d4d;
   border-radius: 12px;
   width: 300px;
-
-  /* border: 1px;
-  border-style: solid;
-  border-color: red; */
 }
 .contact-form:focus,
 .contact-text:focus {
@@ -44,11 +40,10 @@ form {
 
 .contact-text {
   height: 60px;
-  /* width: 300px;  */
 }
 
 .form-button {
-  background-color: #737373; /* #8c8c8c */
+  background-color: #737373;
   padding: 10px;
   width: 180px;
   border-radius: 10px;
@@ -59,7 +54,7 @@ form {
 }
 
 .form-button:hover {
-  background-color: #4d4d4d; /* 737373 */
+  background-color: #4d4d4d;
 }
 
 .contact-container p {
@@ -68,18 +63,10 @@ form {
   font-size: 15px;
 }
 
-/* Mobile */
-@media only screen and (max-width: 414px) {
-}
-
-/* Tablets */
-@media only screen and (min-width: 415px) and (max-width: 768px) {
-}
-
 /* Desktop */
 @media only screen and (min-width: 1900px) {
   .contact-container {
-    padding: 30px 0px 10px 0px; /* top right bottom left */
+    padding: 30px 0px 10px 0px;
   }
 
   .contact-form,
@@ -89,19 +76,19 @@ form {
   }
 
   .contact-container p {
-    padding: 15px 0px 0px 10px; /* top right bottom left */
+    padding: 15px 0px 0px 10px;
     font-size: 20px;
   }
 
   .form-button {
-    background-color: #737373; /* #8c8c8c */
-    padding: 12px 20px 12px 20px; /* top right bottom left */
+    background-color: #737373;
+    padding: 12px 20px 12px 20px;
     width: 220px;
     border-radius: 10px;
     font-size: 14px;
   }
 
   .form-heading {
-    padding-bottom: 40px; /* top right bottom left */
+    padding-bottom: 40px;
   }
 }

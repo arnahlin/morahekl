@@ -12,12 +12,7 @@
   height: 100%;
 }
 
-/* .heading {
-  padding-top: 60px;
-} */
-
 .content {
-  /* padding-top: 60px; */
   padding: 60px 0px 80px 0px; /* top right bottom left */
 }
 
@@ -46,7 +41,6 @@
   .heading {
     padding-top: 100px;
   }
-
   .content {
     font-size: 20px;
   }

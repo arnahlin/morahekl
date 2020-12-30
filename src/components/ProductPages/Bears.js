@@ -12,7 +12,6 @@ class Bears extends Component {
   }
   render() {
     const { bears } = this.state;
-    console.log(bears);
     return (
       <div className="grid-container">
         {bears.map((bear) => (
@@ -31,43 +30,5 @@ class Bears extends Component {
     )
   }
 }
-
-
-
-// function Bears() {
-//   console.log(bears);
-//   return (
-//     <div>
-//       <div className="grid-container">
-//         <div className="grid-item">
-//           <Link to="/Upplysingar" className="to-info">
-//             <img className="bear-pic" alt="" src="bangsi.JPG"></img>
-//           </Link>
-//         </div>
-//         <div className="grid-item">
-//           <img className="bear-pic" alt="" src="bangsi.JPG"></img>
-//         </div>
-//         <div className="grid-item">
-//           <img className="bear-pic" alt="" src="bangsi.JPG"></img>
-//         </div>
-//         <div className="grid-item">
-//           <img className="bear-pic" alt="" src="bangsi.JPG"></img>
-//         </div>
-//         <div className="grid-item">
-//           <img className="bear-pic" alt="" src="bangsi.JPG"></img>
-//         </div>
-//         <div className="grid-item">
-//           <img className="bear-pic" alt="" src="bangsi.JPG"></img>
-//         </div>
-//         <div className="grid-item">
-//           <img className="bear-pic" alt="" src="bangsi.JPG"></img>
-//         </div>
-//         <div className="grid-item">
-//           <img className="bear-pic" alt="" src="bangsi.JPG"></img>
-//         </div>
-//       </div>
-//     </div>
-//   );
-// }
 
 export default Bears;

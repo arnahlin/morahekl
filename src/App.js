@@ -7,12 +7,11 @@ import Footer from "./components/Footer";
 import Home from "./components/Home";
 import About from "./components/About";
 import Contact from "./components/Contact";
-import Order from "./components/Order";
 import Info from "./components/Info";
 
-import Bears from "./components/ProductPages/Bears";
-import Bunnies from "./components/ProductPages/Bunnies";
-import Keychains from "./components/ProductPages/Keychains";
+import Bears from "./components/productPages/Bears";
+import Bunnies from "./components/productPages/Bunnies";
+import Keychains from "./components/productPages/Keychains";
 
 function App() {
 
@@ -27,7 +26,6 @@ function App() {
           <Route exact path="/Um" component={About} />
           <Route exact path="/Hafasamband" component={Contact} />
           <Route exact path="/Upplysingar" component={Info} />
-          {/* <Route exact path="/Panta" component={Order} /> */}
 
           <Route exact path="/Bangsar" component={Bears} />
           <Route exact path="/Kanínur" component={Bunnies} />

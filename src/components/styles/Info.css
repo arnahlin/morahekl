@@ -3,19 +3,11 @@
   height: 100%;
   font-family: "Spartan", sans-serif;
   padding: 10px 50px 0px 50px; /* top right bottom left */
-
-  /* border: 3px;
-  border-style: solid;
-  border-color: black; */
 }
 
 .pic-container {
   height: 300px;
   width: 300px;
-
-  /* border: 3px;
-  border-style: solid;
-  border-color: red; */
 }
 
 .info-pic {
@@ -33,14 +25,10 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
-  /* border: 2px;
-  border-style: solid;
-  border-color: black; */
 }
 
 .product-name {
-  padding: 50px 0px 60px 0px; /* top right bottom left */
+  padding: 50px 0px 60px 0px;
 }
 
 .info-text {
@@ -77,7 +65,7 @@
 
 .info-form p {
   align-self: flex-start;
-  padding: 5px 0px 0px 10px; /* top right bottom left */
+  padding: 5px 0px 0px 10px;
   font-size: 15px;
 }
 
@@ -85,12 +73,10 @@
 @media only screen and (max-width: 414px) {
   .info-container {
     flex-wrap: wrap;
-    /* margin-bottom: 100px; */
   }
 
   .info-image,
   .info-content {
-    /* height: 50%; */
     height: auto;
     padding: 10px 0px 20px 0px;
   }
@@ -101,7 +87,7 @@
     justify-content: flex-start;
   }
   .product-name {
-    padding: 0px; /* top right bottom left */
+    padding: 0px;
   }
 
   .info-text p.price {
@@ -143,7 +129,7 @@
 /* Desktop */
 @media only screen and (min-width: 1900px) {
   .info-container {
-    padding: 0px 80px 0px 80px; /* top right bottom left */
+    padding: 0px 80px 0px 80px;
   }
 
   .pic-container {
@@ -159,7 +145,7 @@
     height: 100px;
   }
   .info-form p {
-    padding: 15px 0px 0px 10px; /* top right bottom left */
+    padding: 15px 0px 0px 10px;
     font-size: 20px;
   }
   .form-button {

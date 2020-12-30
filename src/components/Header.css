@@ -31,8 +31,9 @@
 }
 
 .header-img {
-  height: 160px;
-  width: 160px;
+  height: 200px;
+  width: 200px;
+  margin-top: 40px;
 }
 /* 
 .back-button,
@@ -57,17 +58,28 @@
 
 /* Mobile */
 @media only screen and (max-width: 414px) {
+  .header-img {
+    height: 160px;
+    width: 160px;
+    margin-top: 15px;
+  }
 }
 
 /* Tablets */
 @media only screen and (min-width: 415px) and (max-width: 768px) {
+  .header-img {
+    height: 160px;
+    width: 160px;
+    margin-top: 20px;
+  }
 }
 
 /* Desktop */
 @media only screen and (min-width: 1900px) {
   .header-img {
-    height: 200px;
-    width: 200px;
+    height: 250px;
+    width: 250px;
+    margin-top: 80px;
   }
 
   .container {

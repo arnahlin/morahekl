@@ -1,6 +1,6 @@
 const keychains = [
     {
-        "id": 1,
+        "id": "h1",
         "name": "Kóralrauður",
         "price": "1.500 kr.",
         "img": "/images/h_red.JPG",
@@ -8,7 +8,7 @@ const keychains = [
         "inventory": 0
     },
     {
-        "id": 2,
+        "id": "h2",
         "name": "Kóralbleikur",
         "price": "1.500 kr.",
         "img": "/images/h_coral.JPG",
@@ -16,7 +16,7 @@ const keychains = [
         "inventory": 6
     },
     {
-        "id": 3,
+        "id": "h3",
         "name": "Ljósbleikur",
         "price": "1.500 kr.",
         "img": "/images/h_pink.JPG",
@@ -24,7 +24,7 @@ const keychains = [
         "inventory": 4
     },
     {
-        "id": 4,
+        "id": "h4",
         "name": "Fjólubleikur",
         "price": "1.500 kr.",
         "img": "/images/h_purple.JPG",
@@ -32,7 +32,7 @@ const keychains = [
         "inventory": 2
     },
     {
-        "id": 5,
+        "id": "h5",
         "name": "Steingrár",
         "price": "1.500 kr.",
         "img": "/images/h_grey.JPG",
@@ -40,7 +40,7 @@ const keychains = [
         "inventory": 4
     },
     {
-        "id": 6,
+        "id": "h6",
         "name": "Svartur",
         "price": "1.500 kr.",
         "img": "/images/h_black.JPG",
@@ -48,7 +48,7 @@ const keychains = [
         "inventory": 1
     },
     {
-        "id": 7,
+        "id": "h7",
         "name": "Dökkblár",
         "price": "1.500 kr.",
         "img": "/images/h_blue.JPG",
@@ -56,7 +56,7 @@ const keychains = [
         "inventory": 3
     },
     {
-        "id": 8,
+        "id": "h8",
         "name": "Grænn",
         "price": "1.500 kr.",
         "img": "/images/h_green.JPG",

@@ -1,6 +1,6 @@
 const bunnies = [
     {
-        "id": 1,
+        "id": "k1",
         "name": "Ljósgrá",
         "price": "5.000 kr.",
         "img": "/images/k_lightgrey.JPG",
@@ -8,7 +8,7 @@ const bunnies = [
         "inventory": 0
     },
     {
-        "id": 2,
+        "id": "k2",
         "name": "Gráblá",
         "price": "5.000 kr.",
         "img": "/images/k_greyblue.JPG",
@@ -16,7 +16,7 @@ const bunnies = [
         "inventory": 0
     },
     {
-        "id": 3,
+        "id": "k3",
         "name": "Sæblá",
         "price": "5.000 kr.",
         "img": "/images/k_seablue.JPG",
@@ -24,7 +24,7 @@ const bunnies = [
         "inventory": 1
     },
     {
-        "id": 4,
+        "id": "k4",
         "name": "Steingrá",
         "price": "5.000 kr.",
         "img": "/images/k_grey.JPG",
@@ -32,7 +32,7 @@ const bunnies = [
         "inventory": 1
     },
     {
-        "id": 5,
+        "id": "k5",
         "name": "Ferskjubleik",
         "price": "5.000 kr.",
         "img": "/images/k_peach.JPG",
@@ -40,7 +40,7 @@ const bunnies = [
         "inventory": 0
     },
     {
-        "id": 6,
+        "id": "k6",
         "name": "Dökkbleik",
         "price": "5.000 kr.",
         "img": "/images/k_darkpink.JPG",
@@ -48,7 +48,7 @@ const bunnies = [
         "inventory": 0
     },
     {
-        "id": 7,
+        "id": "k7",
         "name": "Fjólublá",
         "price": "5.000 kr.",
         "img": "/images/k_purple.JPG",

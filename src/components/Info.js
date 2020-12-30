@@ -1,18 +1,17 @@
 import React from "react";
 import "./Info.css";
 import emailjs from "emailjs-com";
-
 // import { Link } from "react-router-dom";
 
 
 function Info(props) {
 
+    // Sendir upplýsingar til tölvupóstþjónustunnar sem sér um að smíða og senda tölvupóstinn 
     function sendEmail(e) {
         console.log("enters function")
         e.preventDefault();
 
-        // TODO: setja rétt email template hér inn
-        emailjs.sendForm('mora-hekl', 'mora_hafasamband', e.target, 'user_0rPwkyClFM3hzSDs4EhpG')
+        emailjs.sendForm('mora-hekl', 'mora_panta', e.target, 'user_0rPwkyClFM3hzSDs4EhpG')
             .then((result) => {
                 console.log(result.text);
             }, (error) => {
@@ -21,26 +20,20 @@ function Info(props) {
         e.target.reset();
     }
 
-    // console.log(props.location.productInfo);
-    // console.log(props.location.productInfo.name);
-    // var product = props.location.productInfo;
-    // console.log(product);
 
-
-    // TODO: skoða þetta betur 
-
+    // Athugar hvort gögn séu til staðar, birtir skilaboð til notanda ef svo er ekki 
+    // Gert til að koma í veg fyrir hrun ef notandi slær beint inn "morahekl.is/Upplysingar" 
+    // eða fer fram og til baka í back/forward tökkum vafrans
     if (props.location.productInfo) {
-        console.log("yay");
         var product = props.location.productInfo;
     } else {
-        console.log("nayy");
         var product = { id: null, name: "Vinsamlegast opnið forsíðu", price: null, img: null, inventory: null };
     }
 
     return (
         <div className="info-container">
             <div className="info-image">
-                <div className="pic-container"> {/* TODO: samræma nöfn á div utan um myndir? */}
+                <div className="pic-container">
                     <img className="info-pic" alt="" src={product.img}></img>
                 </div>
             </div>
@@ -54,13 +47,10 @@ function Info(props) {
                     {/*TODO: undirtexti með uppl. um afhendingartíma */}
                     <p className="price">Verð: {product.price}</p>
                 </div>
-                {/* <Link to={{ pathname: "/Panta", productInfo: product }} className="to-info">
-                    <button>Panta</button>
-                </Link> */}
             </div>
             <div className="info-form">
                 <h1 className="form-heading">Panta</h1>
-                <form > {/* onSubmit={sendEmail} */}
+                <form onSubmit={sendEmail}>
                     <p>Nafn:</p>
                     <input type="text" className="order-form" placeholder="Nafn" name="name" required />
                     <p>Netfang:</p>
@@ -69,6 +59,7 @@ function Info(props) {
                     <input type="text" className="order-form" placeholder="Sími" name="subject" required />
                     <p>Skilaboð:</p>
                     <input type="text" className="order-form-msg" placeholder="Skilaboð" name="message" required />
+                    <input type="hidden" name="product" value={product.id} />
                     <input type='submit' className="form-button" value="Staðfesta" />
                 </form>
             </div>

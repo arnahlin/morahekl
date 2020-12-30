@@ -1,6 +1,6 @@
 const bears = [
     {
-        "id": 1,
+        "id": "b1",
         "name": "Gráblár",
         "price": "7.000 kr.",
         "img": "/images/b_greyblue.JPG",
@@ -8,7 +8,7 @@ const bears = [
         "inventory": 0
     },
     {
-        "id": 2,
+        "id": "b2",
         "name": "Klakablár",
         "price": "7.000 kr.",
         "img": "/images/b_iceblue.JPG",
@@ -16,7 +16,7 @@ const bears = [
         "inventory": 0
     },
     {
-        "id": 3,
+        "id": "b3",
         "name": "Dökkblár",
         "price": "7.000 kr.",
         "img": "/images/b_darkblue.JPG",
@@ -24,7 +24,7 @@ const bears = [
         "inventory": 0
     },
     {
-        "id": 4,
+        "id": "b4",
         "name": "Fjólubleikur",
         "price": "7.000 kr.",
         "img": "/images/b_pinkpurp.JPG",
@@ -32,7 +32,7 @@ const bears = [
         "inventory": 0
     },
     {
-        "id": 5,
+        "id": "b5",
         "name": "Kósíbleikur",
         "price": "7.000 kr.",
         "img": "/images/b_cozypink.JPG",
@@ -40,7 +40,7 @@ const bears = [
         "inventory": 0
     },
     {
-        "id": 6,
+        "id": "b6",
         "name": "Ferskjubleikur",
         "price": "7.000 kr.",
         "img": "/images/b_peach.JPG",
@@ -48,7 +48,7 @@ const bears = [
         "inventory": 0
     },
     {
-        "id": 7,
+        "id": "b7",
         "name": "Brúnn",
         "price": "7.000 kr.",
         "img": "/images/b_brown.JPG",
@@ -56,7 +56,7 @@ const bears = [
         "inventory": 0
     },
     {
-        "id": 8,
+        "id": "b8",
         "name": "Dökkgrár",
         "price": "7.000 kr.",
         "img": "/images/b_darkgrey.JPG",

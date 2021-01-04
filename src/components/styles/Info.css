@@ -1,8 +1,19 @@
+.outer-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  font-family: "Spartan", sans-serif;
+}
+
 .info-container {
   display: flex;
   height: 100%;
-  font-family: "Spartan", sans-serif;
+  /* font-family: "Spartan", sans-serif; */
   padding: 10px 50px 0px 50px; /* top right bottom left */
+
+  /* border: 2px;
+  border-style: solid;
+  border-color: pink; */
 }
 
 .pic-container {
@@ -67,6 +78,14 @@
   align-self: flex-start;
   padding: 5px 0px 0px 10px;
   font-size: 15px;
+}
+
+.confirm-banner {
+  width: 100%;
+  margin-top: 40px;
+  padding: 10px 50px 10px 50px; /* top right bottom left */
+  background-color: #81e481;
+  text-align: center;
 }
 
 /* Mobile */

@@ -2,7 +2,7 @@ footer {
   height: 100%;
   width: 100%;
 }
-.test {
+.footer-container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -45,9 +45,9 @@ footer {
   footer {
     font-size: 26px;
   }
-  .test {
+  /* .test {
     height: 80px;
-  }
+  } */
   .footer-item {
     padding: 0px 190px 0px 190px;
     font-size: 20px;

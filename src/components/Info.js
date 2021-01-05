@@ -10,7 +10,7 @@ function ConfirmBanner(props) {
     }
     return (
         <p className="confirm-banner">
-            Pöntun móttekin, vinsamlegast athugið tölvupóst fyrir staðfestingu. Gæti hafa lent í junk.
+            Pöntun móttekin, vinsamlegast athugið tölvupóst fyrir staðfestingu. Athugið að hún gæti hafa flokkast sem ruslpóstur.
         </p>
     )
 }
@@ -70,12 +70,12 @@ class Info extends Component {
                     <div className="info-content">
                         <div className="info-text">
                             <h1 className="product-name">{this.product.name}</h1>
-                            <p>Efni: 100% bómull</p>
-                            <p>Stærð: {this.product.size}</p>
-                            <p>Lagerstaða: {this.product.inventory}</p>
-                            <p>Afhending: Frí heimsending innan höfuðborgarsvæðisins.</p>
-                            <p>Afhendingartími: 2-3 virkir dagar ef varan er til á lager, en vika fyrir sérpantanir.</p>
-                            <p className="price">Verð: {this.product.price}</p>
+                            <p><span className="text-bold">Efni:</span><span> 100% bómull</span></p>
+                            <p><span className="text-bold">Stærð:</span><span> {this.product.size}</span></p>
+                            <p><span className="text-bold">Lagerstaða:</span><span> {this.product.inventory}</span></p>
+                            <p><span className="text-bold">Afhending:</span><p> Frí heimsending innan höfuðborgarsvæðisins.</p></p>
+                            <p><span className="text-bold">Afhendingartími:</span><p> 1-2 virkir dagar ef varan er til á lager, en vika þegar heklað er eftir pöntun.</p></p>
+                            <p className="price"><span className="text-bold">Verð:</span><span> {this.product.price}</span></p>
                         </div>
                     </div>
                     <div className="info-form">

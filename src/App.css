@@ -70,7 +70,7 @@ body {
 /* Desktop */
 @media only screen and (min-width: 1900px) {
   .app-routes {
-    padding-top: 10px;
+    padding-top: 165px;
     padding-bottom: 80px; /* Hæð á footer */
     margin-bottom: 100px;
   }
